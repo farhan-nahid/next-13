@@ -5,14 +5,11 @@ import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function About() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+        <h1>This is About Page</h1>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -47,11 +44,11 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <Link href="/about" className={styles.card}>
+        <Link href="/" className={styles.card}>
           <h2 className={inter.className}>
-            About <span>-&gt;</span>
+            Home <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Us Page</p>
+          <p className={inter.className}> Page</p>
         </Link>
 
         <a
