@@ -1,6 +1,5 @@
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -47,12 +46,19 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <Link href="/about" className={styles.card}>
+        <a
+          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <h2 className={inter.className}>
-            About <span>-&gt;</span>
+            Docs <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Us Page</p>
-        </Link>
+          <p className={inter.className}>
+            Find in-depth information about Next.js features and API.
+          </p>
+        </a>
 
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
